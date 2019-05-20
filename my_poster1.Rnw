@@ -1,0 +1,481 @@
+\documentclass[final]{beamer}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+%\usepackage{polski}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+\ifdim\Gin@nat@width>\linewidth
+\linewidth
+\else
+\Gin@nat@width
+\fi
+}
+\makeatother
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+\def\at@end@of@kframe{}%
+\ifinner\ifhmode%
+\def\at@end@of@kframe{\end{minipage}}%
+\begin{minipage}{\columnwidth}%
+\fi\fi%
+\def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+\colorbox{shadecolor}{##1}\hskip-\fboxsep
+% There is no \\@totalrightmargin, so:
+\hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+\MakeFramed {\advance\hsize-\width
+\@totalleftmargin\z@ \linewidth\hsize
+\@setminipage}}%
+{\par\unskip\endMakeFramed%
+\at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage{grffile}
+\mode<presentation>{\usetheme{CambridgeUSPOL}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{array,booktabs,tabularx}
+\usepackage{epstopdf}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{colortbl}
+\newcolumntype{Z}{>{\centering\arraybackslash}X}
+
+% rysunki
+\usepackage{tikz}
+\usepackage{ifthen}
+\usepackage{xxcolor}
+\usetikzlibrary{arrows}
+\usetikzlibrary[topaths]
+\usetikzlibrary{decorations.pathreplacing}
+\usefonttheme[onlymath]{serif}
+\boldmath
+\usepackage[orientation=portrait,size=b0,scale=1,debug]{beamerposter}                       % e.g. for DIN-A0 poster
+%\usepackage[orientation=portrait,size=a1,scale=1.4,grid,debug]{beamerposter}                  % e.g. for DIN-A1 poster, with optional grid and debug output
+%\usepackage[size=custom,width=200,height=120,scale=2,debug]{beamerposter}                     % e.g. for custom size poster
+%\usepackage[orientation=portrait,size=a0,scale=1.0,printer=rwth-glossy-uv.df]{beamerposter}   % e.g. for DIN-A0 poster with rwth-glossy-uv printer check
+% ...
+%
+
+\setbeamertemplate{caption}[numbered]
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+\newlength{\columnheight}
+\setlength{\columnheight}{80cm} % ------------------------------- od jakiej wysokości mają zaczynać się klocki, ale też miejsce dla tytułu autorów, afiliacji
+\renewcommand{\thetable}{}
+\def\andname{,}
+\authornote{}
+
+
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+% Początek posteru
+%-------------------------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------Tytuł
+\title{\huge Refinement of an algorithm for High-Resolution HDX-MS data
+analysis combined with \textbf{HaDeX} - online software for HDX data
+representation} 
+
+% -----------------------------------------------------------Autorzy, mail, afiliacje
+\date{}
+\author{
+Dominik Cysewski\,$^{\text{\sfb 1},*}$,
+Aleksandra E. Badaczewska-Dawid\,$^{\text{\sfb 2}}$,
+Weronika Pucha\l{}a\,$^{\text{\sfb 1}}$,
+Micha\l{} Burdukiewicz\,$^{\text{\sfb 3}}$,
+Micha\l{} Kistowski\,$^{\text{\sfb 1}}$,
+Katarzyna Agnieszka D\k{a}browska\,$^{\text{\sfb 1}}$,
+Micha\l{} Dadlez\,$^{\text{\sfb 1}}$\\
+\normaltext{*dominikcysewski@gmail.com}}
+\institute{$^{\text{\sf 1}}$Institute of Biochemistry and Biophysics Polish Academy of Sciences, Poland,
+$^{\text{\sf 2}}$Faculty of Chemistry, Biological and Chemical Research Center, University of Warsaw, Poland,
+$^{\text{\sf 3}}$Faculty of Mathematics and Information Science, Warsaw University of 
+Technology, Poland.
+}
+
+\begin{frame}
+
+\begin{columns}
+\begin{column}{.3\textwidth} %------------------------------------------------ szerokość kolumny lewej
+\begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+\begin{minipage}[T]{.99\textwidth}
+\parbox[t][\columnheight]{\textwidth}
+{
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{Introduction}
+<<echo=FALSE, warning=FALSE, error=FALSE, message=FALSE>>=
+library(HaDeX)
+library(ggplot2)
+library(patchwork)
+library(dplyr)
+
+knitr::opts_chunk$set(fig.width=14.5, fig.height=8.55)
+
+dat <- read_hdx("/home/michal/Dropbox/HR-HDXMS/baza csv z przerobionych Dynamxow/Isu1.csv")
+
+all_combn <- combn(unique(dat[["State"]]), 2, simplify = FALSE) 
+
+ith_combn <- all_combn[[2]]
+
+calc_dat <- prepare_dataset(dat,
+                in_state_first = paste0(ith_combn[1], "_0.001"),
+                chosen_state_first = paste0(ith_combn[1], "_1"),
+                out_state_first = paste0(ith_combn[1], "_1440"),
+                in_state_second = paste0(ith_combn[2], "_0.001"),
+                chosen_state_second = paste0(ith_combn[2], "_1"),
+                out_state_second = paste0(ith_combn[2], "_1440"))
+
+@
+
+\justify 
+Hydrogen-deuterium mass spectrometry (HDX-MS) is a staple tool for monitoring dynamics and interactions of proteins. Due to the sheer size of the HDX-MS results, the data analysis require a dedicated software suite. However, the majority of existing tools provides only point-and-click interfaces to black-box models or does not offer a complete workflow. We propose \textbf{HaDeX}, a novel tool for processing, analysis and visualisation of HDX-MS experiments. \textbf{HaDeX} covers the whole analytic process, including preliminary data exploration, quality control and generation of publication-quality figures. The reproducibility of the whole procedure is ensured with advanced reporting functions.
+
+\end{block}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{HaDeX web server overview}
+
+\begin{figure}
+\includegraphics[width=0.99\columnwidth]{app.pdf}
+\end{figure}
+
+\justify The HaDeX web servers has tools to view and analyze the results of HDX-MS data. (A) Comparison of different states (including protein modifications); (B) sequence coverage; (C) Woods plots.
+
+\end{block}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{Differential plot}
+
+\justify A relative deuteration level used by \textbf{HaDeX} is defined by the equation \ref{eq:deut_lev}.
+
+\begin{equation}
+D = \frac{D_{t} - D_{0}}{D_{100} - D_{0}}
+\label{eq:deut_lev}
+\end{equation}
+
+\justify The equation \ref{eq:deut_lev} is a function of three variables (each with its own uncertainty), so there is need to use the Law of Propagation of Uncertainty, defined in equation \ref{eq:law_un}
+
+\begin{equation}
+u_{c}(y) = \sqrt{\sum_{k} \left[ \frac{\partial y}{\partial x_{k}} u(x_{k}) \right]^2}
+\label{eq:law_un}
+\end{equation}
+
+\justify Applying equation \ref{eq:law_un} to equation \ref{eq:deut_lev}, we get deuteration level uncertainty described by equation \ref{eq:deut_lev_un}
+
+\begin{equation}
+u_{c}(D) = \sqrt{ \left[ \frac{1}{D_{100}-D_{0}} u(D_{t}) \right]^2 + \left[ \frac{D_{t} - D_{100}}{(D_{100}-D_{0})^2} u(D_{0}) \right]^2 + \left[ \frac{D_{0} - D_{t}}{(D_{100}-D_{0})^2} u(D_{100}) \right]^2}
+\label{eq:deut_lev_un}
+\end{equation}
+
+\justify The levels of deuteration along with uncertainty intervals are shown on comparison plot~\ref{fig:comp_plots}. \textbf{HaDeX} provide both experimental and theroetical levels of deuteration.
+\begin{figure}
+<<echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.align="center">>=
+
+comparison_plot(calc_dat = calc_dat,
+                 state_first = ith_combn[1],
+                 state_second = ith_combn[2]) +
+   theme_bw(base_size = 21) +
+  theme(legend.position = "bottom",
+            legend.title = element_blank())
+
+
+@
+\caption{Comparison plots - comparing experimental and theoretical calculations, based on example data.}
+\label{fig:comp_plots}
+\end{figure}
+
+\end{block}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+}
+\end{minipage}
+\end{beamercolorbox}
+\end{column}
+
+
+%new column -------------------------------------------------------------------------------------------------    
+
+\begin{column}{.3\textwidth} % ----------------------------------------- szerokość kolumny prawej
+\begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+\begin{minipage}[T]{.99\textwidth}  
+\parbox[t][\columnheight]{\textwidth}
+{
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{Woods plot}
+
+\justify Woods plot shows a difference between results of two different states as described by equation \ref{eq:diff}.
+
+\begin{equation}
+diff = D_{1} - D_{2}
+\label{eq:diff}
+\end{equation}
+
+Equation \ref{eq:diff} is a function of two variables, so applying \ref{eq:law_un} we get uncertainty described by equation \ref{eq:diff_un}.
+
+\begin{equation}
+u_{c}(diff) = \sqrt{u(D_{1})^2 + u(D_{2})^2}
+\label{eq:diff_un}
+\end{equation}
+
+\justify Results of calculations described above are shown on the Woods below.
+
+\begin{figure}
+<<echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, fig.align="center">>=
+
+
+woods_plot(calc_dat = calc_dat,
+           theoretical = TRUE,
+           relative = FALSE,
+           confidence_limit = 0.98,
+           confidence_limit_2 = 0.99) +
+  theme_bw(base_size = 21) +
+  theme(legend.position = "bottom",
+        legend.title = element_blank())
+
+
+@
+\caption{Plots in Woods format - comparing experimental and theoretical calculations, based on example data.}
+\label{fig:woods_plots}
+\end{figure}
+
+\end{block}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{Quality control}
+
+\justify \textbf{HaDeX} provides additional tools for assement of experiments. For example, the quality control function shows
+how the mean uncertainty per peptide changes with time points of an experiment.
+
+\begin{figure}
+<<echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.align="center">>=
+
+result <- quality_control(dat = dat,
+                          state_first = ith_combn[1],
+                          state_second = ith_combn[2], 
+                          chosen_time = 1440, 
+                          in_time = 0.001)
+
+ggplot(result[result["time"]>=1,]) + 
+  geom_line(aes(x = time, y = avg_err_state_first, color = "Average error (first state)")) +
+  geom_line(aes(x = time, y = avg_err_state_second, color = "Average error (second state)")) +
+  scale_x_log10() +
+  labs(x = "log(time) [min]", y = "Average uncertainty", title = "Uncertainty change") + 
+  theme_bw(base_size = 21) +
+  theme(legend.position = "bottom",
+        legend.title = element_blank())
+
+@
+\caption{Plot ilustrating uncertainy change depending on used out parameter}
+\end{figure}
+
+\end{block}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{Report function}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\textbf{HaDeX} provides report generation - with parameters chosen by user so is fully personalizable. Additionaly, calculated data for plots can be downloaded not only in report form but also in csv/pdf file in panel next to every plot. On figure \ref{fig:rep} are shown available elements of the report - that can be chosen by user and limited strickly for user needs.
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.9\columnwidth]{app_report.png}
+\caption{Screenshot of \textbf{HaDeX} - reporting page}
+\label{fig:rep}
+\end{figure}
+\end{center}
+\end{column}
+\end{columns}
+
+\end{block}
+
+
+\begin{block}{Availability}
+
+\url{http://mslab-ibb.pl/shiny/HaDeX/}$\begin{array}{l}
+\begin{figure}[ht]
+\centering
+\scalebox{0.025}{
+\includegraphics{hadex_qr.eps}
+}
+\end{figure}
+\end{array}
+
+HaDeX is also available as the R package:
+<<echo=TRUE, eval=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.align="center">>=
+source("https://install-github.me/HaDeXversum/HaDeX")
+@
+\end{block}
+
+
+}
+\end{minipage}
+\end{beamercolorbox}
+\end{column}
+
+\begin{column}{.3\textwidth} % ----------------------------------------- szerokość kolumny prawej
+\begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+\begin{minipage}[T]{.99\textwidth}  
+\parbox[t][\columnheight]{\textwidth}
+{
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{block}{High-resolution HDX}
+
+Improvements of the algorithm proposed by Gessner et. al. (2017):
+
+\begin{enumerate}
+\item a unified software available from the command line,
+\item ultimately a web server enriched with numerous data visualization possibilities,
+\item consistent implementation in C++,
+\item optimization of computational efficiency (simplification of functions,
+implementation in C++),
+\item simple parameterization in an external configuration file (specification of
+experimental conditions),
+\item experimental data in any format (the need to indicate the right columns from
+the input file in the configuration file),
+\item used solvers (linear: lsqlinand nonlinear: nlsserc) are direct analogs of matlab
+functions, implemented in the OCTAVE library (substantive/conceptual
+compatibility),
+\item simplifying and standardizing the problem.
+\end{enumerate}
+
+\begin{figure}
+<<echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, fig.align="center",fig.height=13.3>>=
+
+
+parse_path <- function(x) {
+  path_raw <- strsplit(x, " ")[[1]] %>% 
+    matrix(ncol = 3, byrow = TRUE) 
+  
+  path_raw <- path_raw[, -1]
+  storage.mode(path_raw) <- "numeric"
+  path_raw[, 2] <- path_raw[, 2]*-1
+  colnames(path_raw) <- c("X", "Y")
+  path_raw
+}
+
+isu1_overlap <- graphic_overlapping(read_hdx("/home/michal/Dropbox/HR-HDXMS/baza csv z przerobionych Dynamxow/Isu1.csv"))[["data"]]
+isu1_overlap[["value"]] <- isu1_overlap[["value"]] + 33
+
+isu1_raw <- "M 1040 7002.03125 L 1040 7000 L 3300 7000 L 3357.96875 340 L 3420 7000 L 3480 7000 L 3540 6960 L 3600 6960 L 3680 6560 L 3800 6560 L 3860 7002.03125 L 3920 6560 L 4180 6560 L 4240 7000 L 4360 7000 L 4423.984375 6380 L 4486.015625 6525 L 4548.984375 7002.03125 L 4612.03125 6525 L 4680 7000 L 4980 7000 L 5040 6360 L 5120 6360 L 5176.015625 7002.03125 L 5240 6940 L 5480 6940 L 5560 7000 L 6060 7000 L 6120 6960 L 6240 6960 L 6300 6400 L 6740 6400 L 6800 7000 L 7620 7000 L 7680 6800 L 7740 6800 L 7807.03125 7002.03125 L 7870 6916.015625 L 7932.96875 340 L 8000 7000 L 11320 7000"
+isu1_dat <- parse_path(isu1_raw)
+
+isu1_dat[, "X"] <- (isu1_dat[, "X"] - min(isu1_dat[, "X"]))/(max(isu1_dat[, "X"]) - min(isu1_dat[, "X"]))*162 + 1
+isu1_dat[, "Y"] <- (isu1_dat[, "Y"] - min(isu1_dat[, "Y"]))/(max(isu1_dat[, "Y"]) - min(isu1_dat[, "Y"]))
+isu1_plot_dat <- data.frame(isu1_dat)
+isu1_plot_dat <- isu1_plot_dat[isu1_plot_dat[["X"]] > min(isu1_overlap[["value"]]), ]
+isu1_plot_dat[["Z"]] <- ifelse(isu1_plot_dat[["X"]] < 39, "'N-terminal effect'", "HDX kinetics")
+
+p1 <- ggplot(isu1_plot_dat, aes(x = X, y = Y, linetype = Z)) +
+  geom_line() +
+  scale_x_continuous("", breaks = seq(0, 180, by = 20), limits = c(0, 180)) +
+  scale_y_continuous("Estimated kinetics of the H/D exchange") +
+  scale_linetype_manual("", values = c("dashed", "solid")) +
+  theme_bw(base_size = 21) +
+  theme(legend.justification=c(0, 1), 
+        legend.position=c(0.65, 0.95),
+        legend.background = element_blank(),
+        legend.key = element_blank(),
+        legend.key.width = unit(3,"cm"))
+
+p2 <- ggplot(isu1_overlap, aes(x = value, y = ID, group = ID)) +
+  geom_line() +
+  scale_x_continuous("Position in sequence", breaks = seq(0, 180, by = 20), limits = c(0, 180)) +
+  scale_y_continuous("") +
+  theme_bw(base_size = 21) +
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank())
+
+
+p1/p2 + plot_layout(ncol = 1, heights = c(3, 1))
+@
+
+\end{figure}
+
+\end{block}
+
+
+\begin{block}{Acknowledgements}
+
+\justify The project is carried out within the TEAM TECH programme of the Foundation for Polish Science co-financed by the European Union under the European Regional Development Fund.(TEAM TECH CORE FACILITY/2016-2/2) „Mass Spectrometry of Biopharmaceuticals-improved methodologies for qualitative, quantitative and structural characterization of drugs, proteinaceous drug targets and diagnostic molecules”
+
+\begin{figure}
+\includegraphics[width=0.95\columnwidth]{listwa.png}
+\end{figure}
+
+\end{block}
+
+\begin{block}{Bibliography}
+
+
+\begin{enumerate}
+\small
+\item [1] Start2Fold: a database of hydrogen/deuterium exchange data on protein folding and stability. Pancsa R,
+Varadi M, Tompa P, Vranken WF. Nucleic Acids Res. 2016 Jan 4;44(D1):D429-34. doi:
+10.1093/nar/gkv1185. Epub 2015 Nov 17
+\item [2] HDX workbench: software for the analysis of H/D exchange MS data. Pascal BD, Willis S, Lauer JL,
+Landgraf RR, West GM, Marciano D, Novick S, Goswami D, Chalmers MJ, Griffin PR. J Am Soc Mass
+Spectrom. 2012 Sep;23(9):1512-21. doi: 10.1007/s13361-012-0419-6. Epub 2012 Jun 13.
+\item [3] MEMHDX: an interactive tool to expedite the statistical validation and visualization of large HDX-MS
+datasets. Hourdel V, Volant S, O'Brien DP, Chenal A, Chamot-Rooke J, Dillies MA, Brier S. Bioinformatics.
+2016 Nov 15;32(22):3413-3419. Epub 2016 Jul 13
+\item [4] Deuteros: software for rapid analysis and visualization of data from differential hydrogen deuterium exchange-mass spectrometry, Andy M C Lau, Zainab Ahdash, Chloe Martens, Argyris Politis, , Bioinformatics, btz022, https://doi.org/10.1093/bioinformatics/btz022
+\item [5] ISO, Guide to the Expression of Uncertainty in Measurement (International Organization for Standardization, Geneva, Switzerland, 1993)
+\end{enumerate}
+\item [6] Gessner, C., Steinchen, W., Bédard, S., Skinner, J.J., Woods, V.L., Walsh, T.J., Bange, G., and Pantazatos, D.P. (2017). Computational method allowing Hydrogen-Deuterium Exchange Mass Spectrometry at single amide Resolution. Scientific Reports 7, 3789.
+
+\end{block}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+}
+\end{minipage}
+\end{beamercolorbox}
+\end{column}
+
+\end{columns}  
+
+
+\end{frame}
+
+
+\end{document}

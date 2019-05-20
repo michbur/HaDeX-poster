@@ -1,0 +1,1596 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.3.23)  19 MAY 2019 18:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**beamerposter.sty
+(./beamerposter.sty
+LaTeX2e <2018-12-01>
+! Use of \beamerposter doesn't match its definition.
+<argument> \beamerposter @n
+                           ame
+l.39 \ProvidesPackage{\beamerposter@name}
+                                         [\beamerposter@releaseinfo]
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \beamerposter doesn't match its definition.
+<write> ...s@pkg \space provides `\beamerposter @n
+                                                  ame'\@gobble \on@line .
+l.39 \ProvidesPackage{\beamerposter@name}
+                                         [\beamerposter@releaseinfo]
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+LaTeX Warning: You have requested package `',
+               but the package provides `ame'.
+
+! Use of \beamerposter doesn't match its definition.
+<argument> \beamerposter @r
+                           eleaseinfo
+l.39 ...merposter@name}[\beamerposter@releaseinfo]
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \beamerposter doesn't match its definition.
+<write> Package: \@gtempa \space \beamerposter @r
+                                                 eleaseinfo
+l.39 ...merposter@name}[\beamerposter@releaseinfo]
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Package: ame eleaseinfo
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count80
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)
+
+! Package xkeyval Error: xkeyval loaded before \documentclass.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...yval loaded before \protect\documentclass}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/type1cm/type1cm.sty
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count81
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count82
+\FP@xia=\count83
+\FP@xib=\count84
+\FP@xfa=\count85
+\FP@xfb=\count86
+\FP@rega=\count87
+\FP@regb=\count88
+\FP@regs=\count89
+\FP@times=\count90
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+))
+(/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip41
+\plpartopsep=\skip42
+\plitemsep=\skip43
+\plparsep=\skip44
+\pl@lab=\toks16
+)
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \newif\if@
+               beamerposter@portrait
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--49
+[]
+ []
+
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: checking size input, please wait.\...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Package ame Info: checking size input, please wait. on input line 134.
+! Undefined control sequence.
+\KV@.@size ...king size input, please wait.} \XKV 
+                                                  @cc*+[\val \nr ]{#1}{a0b,a...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+\KV@.@size ...nput, please wait.} \XKV @cc*+[\val 
+                                                  \nr ]{#1}{a0b,a0,b0,a1,a2,...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\KV@.@size ..., please wait.} \XKV @cc*+[\val \nr 
+                                                  ]{#1}{a0b,a0,b0,a1,a2,a3,a...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: the input \val \ \nr \ was correct...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Undefined control sequence.
+<write> ...eamerposter @name Info: the input \val 
+                                                  \ \nr \ was correct, we pr...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<write> ...oster @name Info: the input \val \ \nr 
+                                                  \ was correct, we proceed....
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package ame Info: the input \ \ was correct, we proceed. on input line 134.
+! Undefined control sequence.
+\KV@.@size ...s correct, we proceed.} \ifcase \nr 
+                                                  \relax \edef \paperwidthVa...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Use of \beamerposter doesn't match its definition.
+\KV@.@size ...ustomsizetrue \fi }{\beamerposter @W
+                                                  arning{the input \val \ wa...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+\KV@.@size ...eamerposter @Warning{the input \val 
+                                                  \ was incorrect and was ig...
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: finished size input check.\on@line .
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Package ame Info: finished size input check. on input line 134.
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: myfontscale=\myfontscale \on@line .
+l.134 \ExecuteOptionsX{size=a0,scale=1.0}
+                                         
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Package ame Info: myfontscale=1.0 on input line 134.
+! Missing \endcsname inserted.
+<to be read again> 
+                   \opt@. 
+l.135 \ProcessOptionsX\relax
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Unknown option `\opt@. ' for package `'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \ProcessOptionsX\relax
+                            
+The option `\opt@. ' was not declared in package `', perhaps you
+misspelled its name. Try typing  <return>  to proceed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 134--136
+[]
+ []
+
+( FP-UPN ( FP-MUL
+! FP error: Illegal character \fontscale  found in float number!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.143 ...ntscale}{myfontscale fontscale * 2 round}
+                                                  
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.143 ...ntscale}{myfontscale fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.143 ...ntscale}{myfontscale fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.143 ...ntscale}{myfontscale fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+! Undefined control sequence.
+<argument> \paperwidthValue 
+                            cm
+l.155 ...tlength{\paperwidth}{\paperwidthValue cm}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   c
+l.155 ...tlength{\paperwidth}{\paperwidthValue cm}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \paperheightValue 
+                             cm
+l.156 ...ength{\paperheight}{\paperheightValue cm}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   c
+l.156 ...ength{\paperheight}{\paperheightValue cm}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \textwidthValue 
+                           cm
+l.157   \setlength{\textwidth}{\textwidthValue cm}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   c
+l.157   \setlength{\textwidth}{\textwidthValue cm}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> \textheightValue 
+                            cm
+l.158 ...tlength{\textheight}{\textheightValue cm}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   c
+l.158 ...tlength{\textheight}{\textheightValue cm}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: paperwidth=\the \paperwidth , pape...
+l.178 ...paperwidth, paperheight=\the\paperheight}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Package ame Info: paperwidth=0.0pt, paperheight=0.0pt on input line 178.
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: textwidth=\the \textwidth , textwi...
+l.179 ...the\textwidth, textwidth=\the\textheight}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Package ame Info: textwidth=0.0pt, textwidth=0.0pt on input line 179.
+! Use of \beamerposter doesn't match its definition.
+<write> Package \beamerposter @n
+                                ame Info: fontscale=\fontscale , myfontscale...
+l.180 ...ale=\fontscale, myfontscale=\myfontscale}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Undefined control sequence.
+<write> ...oster @name Info: fontscale=\fontscale 
+                                                  , myfontscale=\myfontscale...
+l.180 ...ale=\fontscale, myfontscale=\myfontscale}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package ame Info: fontscale=, myfontscale=0.00 on input line 180.
+! Undefined control sequence.
+l.181 \geometry
+               {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182   p
+         aperwidth=\the\paperwidth,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 182--190
+[]
+ []
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.227 ...lttinyX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.227 ...lttinyX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.227 ...lttinyX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.228 ...lttinyY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.228 ...lttinyY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.228 ...lttinyY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \tiny undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \renewcommand*{\tiny}
+                           {\fontsize{\resulttinyX}{\resulttinyY}\selectfont}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.232 ...ptsizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.232 ...ptsizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.232 ...ptsizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.233 ...ptsizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.233 ...ptsizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.233 ...ptsizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \scriptsize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \renewcommand*{\scriptsize}
+                                 {\fontsize{\resultscriptsizeX}{\resultscrip...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.237 ...tesizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.237 ...tesizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.237 ...tesizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.238 ...tesizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.238 ...tesizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.238 ...tesizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \footnotesize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \renewcommand*{\footnotesize}
+                                   {\fontsize{\resultfootnotesizeX}{\resultf...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.242 ...tsmallX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.242 ...tsmallX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.242 ...tsmallX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.243 ...tsmallY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.243 ...tsmallY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.243 ...tsmallY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \small undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 \renewcommand*{\small}
+                            {\fontsize{\resultsmallX}{\resultsmallY}\selectf...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.247 ...alsizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.247 ...alsizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.247 ...alsizeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.248 ...alsizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.248 ...alsizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.248 ...alsizeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.252 ...tlargeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.252 ...tlargeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.252 ...tlargeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.253 ...tlargeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.253 ...tlargeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.253 ...tlargeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \large undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 \renewcommand*{\large}
+                            {\fontsize{\resultlargeX}{\resultlargeY}\selectf...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.257 ...tLargeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.257 ...tLargeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.257 ...tLargeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.258 ...tLargeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.258 ...tLargeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.258 ...tLargeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \Large undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 \renewcommand*{\Large}
+                            {\fontsize{\resultLargeX}{\resultLargeY}\selectf...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.262 ...tLARGEX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.262 ...tLARGEX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.262 ...tLARGEX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.263 ...tLARGEY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.263 ...tLARGEY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.263 ...tLARGEY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \LARGE undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 \renewcommand*{\LARGE}
+                            {\fontsize{\resultLARGEX}{\resultLARGEY}\selectf...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.267 ...lthugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.267 ...lthugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.267 ...lthugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.268 ...lthugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.268 ...lthugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.268 ...lthugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \huge undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 \renewcommand*{\huge}
+                           {\fontsize{\resulthugeX}{\resulthugeY}\selectfont}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.272 ...ltHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.272 ...ltHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.272 ...ltHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.273 ...ltHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.273 ...ltHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.273 ...ltHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) )
+
+! LaTeX Error: Command \Huge undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 \renewcommand*{\Huge}
+                           {\fontsize{\resultHugeX}{\resultHugeY}\selectfont}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.277 ...ryHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.277 ...ryHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.277 ...ryHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.278 ...ryHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.278 ...ryHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.278 ...ryHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.282 ...ryHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.282 ...ryHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.282 ...ryHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.283 ...ryHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.283 ...ryHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.283 ...ryHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.287 ...RYHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.287 ...RYHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.287 ...RYHugeX}{myfontscale fontSizeX * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.288 ...RYHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.288 ...RYHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.288 ...RYHugeY}{myfontscale fontSizeY * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Illegal character \fontscale  found in float number!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.301 ...indentionLevelValuei fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.301 ...indentionLevelValuei fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.301 ...indentionLevelValuei fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.301 ...indentionLevelValuei fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Illegal character \fontscale  found in float number!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.302 ...ndentionLevelValueii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.302 ...ndentionLevelValueii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.302 ...ndentionLevelValueii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.302 ...ndentionLevelValueii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Illegal character \fontscale  found in float number!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.303 ...dentionLevelValueiii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.303 ...dentionLevelValueiii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.303 ...dentionLevelValueiii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ( FP-ROUND
+! FP error: Number too big!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.303 ...dentionLevelValueiii fontscale * 2 round}
+                                                  
+(That was another \errmessage.)
+
+) ) ( FP-UPN ( FP-MUL
+! FP error: Illegal character \fontscale  found in float number!.
+\FP@errmessage #1->\errmessage {FP error: #1!}
+                                              
+l.304 ...entionLevelValueiiii fontscale * 2 round}
+                                                  
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 1185 strings out of 492615
+ 15099 string characters out of 6131390
+ 89340 words of memory out of 5000000
+ 5138 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 24i,0n,30p,232b,101s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!
